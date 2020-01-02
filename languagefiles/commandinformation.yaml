@@ -18,10 +18,11 @@ commandinformation:
 commandinformation:
   pauseplayer:
     groupname: NPC Commands
+    alias:
+    - pp
     description:
     - 'Causes the NPC to pause when players'
     - 'are within <distance> of squares.'
-    settings: []
     variables:
       distance:
         description: 'Minimum distance to a player before pausing'
