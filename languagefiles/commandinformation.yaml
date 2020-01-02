@@ -1,0 +1,31 @@
+##  About how to format the command information
+commandinformation:
+  <COMMANDNAME>:
+    groupname: {This is the help group you wish to have the command grouped under}
+    alias:
+    - {List of Aliases or just remove if you don't have any}
+    description:
+    - {Single or lines that describe the command}
+    variables:
+      <variablename>:
+        description: {Quick description to show in the hovertext}
+        usage: {Short usage example to show in the usage example, if removed it shows the variable name}
+        actionbar: {Message to show in the actionbar while the user is typing this argument}
+    responses:
+      {yaml formatted responses section called by a plugin}
+    
+##Example
+commandinformation:
+  pauseplayer:
+    groupname: NPC Commands
+    description:
+    - 'Causes the NPC to pause when players'
+    - 'are within <distance> of squares.'
+    settings: []
+    variables:
+      distance:
+        description: 'Minimum distance to a player before pausing'
+      maxtime:
+        description: 'Max seconds to pause, 0 for unlimited'
+    responses:
+      notspawned: 'This command requires the selected NPC to be spawned into the world.'
