@@ -11,6 +11,9 @@ commandinformation:
         description: {Quick description to show in the hovertext}
         usage: {Short usage example to show in the usage example, if removed it shows the variable name}
         actionbar: {Message to show in the actionbar while the user is typing this argument}
+    help:
+      web: {URL to web help}
+      video: {Video link for help with command}
     responses:
       {yaml formatted responses section called by a plugin}
     
@@ -28,5 +31,8 @@ commandinformation:
         description: 'Minimum distance to a player before pausing'
       maxtime:
         description: 'Max seconds to pause, 0 for unlimited'
+    help:
+      web: 'https://github.com/Nutty101/NuttyCore/'
+      video: 'https://youtube.com'
     responses:
       notspawned: 'This command requires the selected NPC to be spawned into the world.'
